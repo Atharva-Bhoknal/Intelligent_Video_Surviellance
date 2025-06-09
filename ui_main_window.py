@@ -270,10 +270,10 @@ class MainWindow(QMainWindow):
         self.update_control_buttons(running=False, loading=True)
         self.video_display_label.setText("⏳ Loading AI Models, please wait...")
         model_paths = {
-            "weapon": "D:/Projects/ML/FinalYr/Weapon.pt",
-            "fire": "D:/Projects/ML/FinalYr/firedetectionmodel.pt",
-            "accident": "D:/Projects/ML/FinalYr/Accident.pt",
-            "object": "D:/Projects/ML/FinalYr/objectdetectionmodel.pt"
+            "weapon": "Weapon.pt",
+            "fire": "firedetectionmodel.pt",
+            "accident": "Accident.pt",
+            "object": "objectdetectionmodel.pt"
        }
         self.model_loader_thread = ModelLoaderThread(model_paths)
         self.model_loader_thread.models_loaded.connect(self.on_models_loaded)
@@ -398,8 +398,8 @@ class MainWindow(QMainWindow):
         if not recipient_email: return
 
         SMTP_SERVER, SMTP_PORT = "smtp.gmail.com", 465
-        SENDER_EMAIL = "myemail@gmail.com"  # ⚠️ YOUR SENDER EMAIL HERE
-        APP_PASSWORD = "abc"  # ⚠️ YOUR GMAIL APP PASSWORD HERE
+        SENDER_EMAIL = "intelligentvideosurveillance@gmail.com"  # ⚠️ YOUR SENDER EMAIL HERE
+        APP_PASSWORD = "istnvxdlmxhkflak"  # ⚠️ YOUR GMAIL APP PASSWORD HERE
 
         try:
             msg = EmailMessage()
