@@ -1,0 +1,8 @@
+PySide6
+opencv-python
+numpy
+ultralytics
+torch
+torchvision
+torchaudio
+qtawesome
